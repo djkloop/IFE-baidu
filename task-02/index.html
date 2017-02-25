@@ -1,10 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>$Title$</title>
+    <meta charset="utf-8">
+    <title>IFE JavaScript Task 01</title>
 </head>
 <body>
-$END$
+
+<h3>污染城市列表</h3>
+<ul id="aqi-list">
+    <!--
+        <li>第一名：福州（样例），10</li>
+          <li>第二名：福州（样例），10</li> -->
+</ul>
+
+<script type="text/javascript">
+    /*
+     在注释下方编写代码
+     遍历读取aqiData中各个城市的数据
+     将空气质量指数大于60的城市显示到aqi-list的列表中
+     */
+
+
+    // 创建全局的 '$' 变量
+    window.$ = function(selector) {
+        return document.querySelector(selector);
+    };
+
+    var aqiData = [
+        ["北京", 90],
+        ["上海", 50],
+        ["福州", 10],
+        ["广州", 50],
+        ["成都", 90],
+        ["西安", 100]
+    ];
+
+    (function () {
+        let aqiDataFilter=aqiData.filter((element)=>{
+             return element[1] > 60;
+        });
+        //过滤掉数组中不满足element[1] > 60的项
+
+        let aqiDataSort=aqiDataFilter.sort((prev,cur)=>{
+            return -(prev[1]-cur[1])
+        });
+        //对数组从大到小进行排序
+
+        let cityList=aqiDataSort.map((element,index)=>{
+            return `<li>第${index+1}名，${element[0]}，${element[1]}</li>`
+        });
+        //根据数组中的元素，将其映射为li元素
+
+        $('#aqi-list').innerHTML=cityList.reduce((prev,cur)=>{
+            return prev+cur;
+        });
+        //通过归并方法，将数组中的li合并为一个字符串，并显示出来
+
+    })();
+
+</script>
 </body>
 </html>
