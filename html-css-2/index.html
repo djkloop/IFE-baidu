@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>任务三：三栏式布局</title>
+    <style>
+        html, body {
+            top: 0;
+            margin: 0;
+            height: 100%;
+            background: #eeeeee;
+        }
+
+        .left {
+            width: 200px;
+            padding: 20px;
+            border: 1px solid #999;
+            float: left;
+            height: 150px;
+            background: #eee;
+        }
+
+        .logo {
+            width: 100px;
+        }
+
+        .right {
+            width: 80px;
+            padding: 20px;
+            float: right;
+            border: 1px solid #999;
+        }
+
+        .team img {
+            margin: 10px;
+            padding: 10px;
+            width: 80px;
+            height: 80px;
+        }
+
+        .centerIntro {
+            border: 1px solid #999;
+            width: auto;
+            margin: 0 140px 0 260px;
+            background: #eee;
+            height: 100%;
+            padding: 20px;
+
+        }
+
+        /*中间主体存在克星，clear:both属性。如果要使用此方法，需避免明显的clear样式。*/
+
+        .logo img {
+            float: left;
+            margin-top: 10px;
+            width: 80px;
+            height: 80px;
+            border: 1px solid #999;
+        }
+
+        .avotar {
+            margin-top: 10px;
+        }
+
+        .avotar img {
+
+            width: 80px;
+            height: 80px;
+            border: 1px solid #999;
+        }
+
+        .outBorder {
+            padding: 20px;
+            margin: 20px;
+            height: auto;
+            border: 2px solid #999999;
+        }
+
+        .avotarName {
+            margin-right: 30px;
+            float: right;
+            width: 50px;
+        }
+
+    </style>
+</head>
+<body>
+<div class="outBorder">
+    <div class="left">
+        <div class="logo">
+            <img src="./image/meituan.jpg"/>
+        </div>
+        <div class="avotarName">
+            <h4>美团网</h4>
+        </div>
+    </div>
+
+    <div class="right">
+        <div class="avotar">
+            <img src="./image/meituan.jpg"/>
+        </div>
+        <div class="avotar">
+            <img src="./image/meituan.jpg"/>
+        </div>
+        <div class="avotar">
+            <img src="./image/meituan.jpg"/>
+        </div>
+        <div class="avotar">
+            <img src="./image/meituan.jpg"/>
+        </div>
+    </div>
+    <div class="centerIntro">
+        <h3>美团网介绍</h3>
+        <p>美团网 ，是2010年3月4日成立的团购网站。美团网有着“吃喝玩乐全都有”的宣传口号。为消费者发现最值得信赖的商家，让消费者享受超低折扣的优质服务；为商家找到最合适的消费者，给商家提供最大收益的互联网推广</p>
+        <h4>发展历史</h4>
+        <p>2010年3月4日，王兴推出美团网。</p>
+        <p> 2010年3月，获得天使投资人王江的种子投资；</p>
+        <p> 2010年5月4日，美团网上海站上线。</p>
+        <p>2010年5月6日，美团网武汉站上线。</p>
+        <p>2010年7月26日，美团网西安站上线。</p>
+        <p>2010年8月2日，美团网广州站上线。</p>
+        <p>2010年8月，获得了红杉资本1200万美元A轮投资；</p>
+        <p> 2010年10月19日，美团网无锡站上线。</p>
+        <p> 2010年10月22日，美团网南京站上线。</p>
+        <p> 2010年12月22日,美团网石家庄站上线。</p>
+        <p>etc......</p>
+        <h4> 公司规模</h4>
+        <p> 美团网2012年7月份的销售额已经超过了5亿元，本地服务销售额占总销售额的95.14%</p>
+        <p> 美团网2014年8月的交易额突破45亿元。截止到8月，美团共有北京、深圳、上海、广州、西安、武汉、杭州、成都八大城市单月交易额突破1亿元大关。</p>
+        <p>2014年美团全年交易额突破460亿元，较增长180%以上，市场份额占比超过60%。</p>
+        <p>美团网数据显示，2014年12月单月交易额达到63亿元，单日交易额更突破3亿元，在市场份额占比方面，美团网市场份额超过60%，比2013年的53%增长了7个百分点。</p>
+    </div>
+</div>
+</body>
+</html>

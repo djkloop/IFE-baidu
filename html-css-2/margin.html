@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>margin负值法完成三栏布局</title>
+    <style type="text/css">
+
+        html, body {
+            margin: 0;
+            height: 100%;
+        }
+
+        #main {
+            width: 100%;
+            float: left;
+            height: 100%;
+        }
+
+        #main #body {
+            background: #ffe6b8;
+            margin: 0 210px;
+            height: 100%;
+        }
+
+        #left {
+            margin-left: -100%;
+        }
+
+        #right {
+            margin-left: -200px;
+        }
+
+        #left, #right {
+            float: left;
+            width: 200px;
+            height: 100%;
+            background: teal;
+        }
+    </style>
+</head>
+<body>
+<div id="main">
+    <div id="body"></div>
+</div>
+<div id="left"></div>
+<div id="right"></div>
+</body>
+</html>
