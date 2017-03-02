@@ -1,7 +1,24 @@
 /*CSS实现简单栅格系统*/
+body, html {
+    margin: 0;
+    padding: 0;
+}
 .grid-container {
-    width: 100%;
+    /*width: 100%;*/
     max-width: 100%;
+    margin: 0 10px 0 10px;
+}
+
+[class*='col-'] {
+    float: left;
+    min-height: 1px;
+    padding: 10px; /*gutter*/
+    background: #eee;
+}
+
+.fill {
+    height: 50px;
+    border: 1px solid #999;
 }
 
 .row:before,
@@ -9,19 +26,9 @@
     content: '';
     display: table;
     clear: both;
+
 }
 
-[class*='col-'] {
-    float: left;
-    min-height: 1px;
-    /*width: 16.66%;*/
-    height: 50px;
-    padding: 20px; /*gutter*/
-
-    border: 1px solid #999;
-    background: #eee;
-    /*margin: 20px;*/
-}
 
 .col-12 {
     width: 100%;
