@@ -55,7 +55,7 @@ let DOMTreeRender = (nodes, DOMNode) => {
         if (data.length > 0) {
             data.map(item => {
                 if (item.children) {
-                    str += `<div class="tree" ><div class="folder" onclick="toggleSlider(event)"><i class="fa fa-minus node-icon"></i><i class="fa fa-folder-open node-icon"></i><a class='folder-a' href='#'>${item.name}</a></div><div class='file-node slide'>`;
+                    str += `<div class="tree" ><div class="folder" onclick="toggleSlider(event)"><i class="fa fa-minus node-icon"></i><i class="fa fa-folder-open node-icon"></i><a class='folder-a' >${item.name}</a></div><div class='file-node slide'>`;
 
                     insertNode(item.children);
                     str += "</div></div>";

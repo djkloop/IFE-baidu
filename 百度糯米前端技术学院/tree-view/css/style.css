@@ -1,7 +1,17 @@
+body {
+    background: #dddddd;
+}
+
 #tree {
-    margin: 40px;
+    margin: 40px auto;
     background: #eeeeee;
-    padding: 20px;
+    padding: 80px;
+    width: 600px;
+    height: 700px;
+}
+
+#tree:hover {
+    cursor: pointer;
 }
 
 .tree {
@@ -15,7 +25,7 @@
 }
 
 .folder:hover {
-    background: rgba(98, 152, 238, 0.71);
+    /*background: rgba(98, 152, 238, 0.71);*/
 }
 
 .slide {
