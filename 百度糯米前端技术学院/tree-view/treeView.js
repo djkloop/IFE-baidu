@@ -35,7 +35,7 @@ var nodesTest = [{
         children: [{name: "子节点21"},
             {
                 name: "子节点22",
-                children: [{name: "叶子节点221"},
+                children: [{name: "子节点221"},
                     {name: "叶子节点222", children: [{name: "叶子节点2221"}]}]
             }]
     },
