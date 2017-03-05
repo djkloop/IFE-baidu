@@ -1,0 +1,32 @@
+#tree {
+    margin: 40px;
+    background: #eeeeee;
+    padding: 20px;
+}
+
+.tree {
+    width: 200px;
+    overflow: hidden;
+}
+
+.folder-a {
+    text-decoration: none;
+
+}
+
+.folder:hover {
+    background: rgba(98, 152, 238, 0.71);
+}
+
+.slide {
+    padding-left: 35px;
+}
+
+.slide-up {
+    display: none;
+}
+
+.node-icon {
+    margin-right: 5px;
+    margin-left: 5px;
+}
