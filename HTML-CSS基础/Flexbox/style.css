@@ -13,13 +13,18 @@ li {
     list-style: none;
 }
 
+.item {
+    order: 2;
+    border: 1px solid;
+}
+
 .flex-container {
+    padding: 20px;
     display: flex;
     border: 1px solid grey;
-    flex-flow: row wrap-reverse;
+    flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
-    align-content: flex-start;
 }
 
 .flex-item-1 {
@@ -43,13 +48,22 @@ li {
 
 }
 
+@media screen and (max-width: 640px) {
+    .flex-container {
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .flex-item-4 {
+        margin-bottom: 20px;
+        order: 1;
+    }
+}
+
 .flex-item-4 {
-    border-color: #0f0;
+    border-color: blue;
     width: 150px;
     height: 200px;
 }
 
-.item {
-    border: 1px solid red;
-    padding: 20px;
-}
